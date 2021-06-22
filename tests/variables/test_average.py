@@ -11,4 +11,4 @@ from tasks.variables.average import calc_average
     ]
 )
 def test_average(a, b, c):
-    assert int(calc_average(a, b, c)) == round((a + b + c) / 3, 5)
+    assert calc_average(a, b, c) == round((a + b + c) / 3, 5)
