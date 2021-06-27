@@ -5,8 +5,8 @@ from tasks.strings.two_parts import split_to_parts
 
 @pytest.mark.parametrize(
     "str_to_split, expected", [
-        ('hello', ('he', 'llo')),
-        ('hello world', ('hello', ' world')),
+        ('hello', ('hel', 'lo')),
+        ('hello world', ('hello ', 'world')),
         ('good morning', ('good m', 'orning')),
         ('good', ('go', 'od')),
     ]
