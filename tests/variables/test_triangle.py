@@ -10,5 +10,5 @@ from tasks.variables.triangle import triangle
         (33, 56, (65, 154, 924)),
     ]
 )
-def test_tip(side_1, side_2, expected):
+def test_triangle(side_1, side_2, expected):
     assert triangle(side_1, side_2) == expected

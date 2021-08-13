@@ -3,6 +3,7 @@ import pytest
 from tasks.variables.size_of import size_in_kb
 
 
+@pytest.mark.skip(reason="Different result on different python versions")
 @pytest.mark.parametrize(
     "some_object, expected", [
         ([i for i in range(100)], "0.9 кб"),

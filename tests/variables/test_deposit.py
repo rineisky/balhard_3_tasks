@@ -10,5 +10,5 @@ from tasks.variables.deposit import calculate_deposit
         (1500, 3, 1996),
     ]
 )
-def test_cockroach_speed(summa, years, expected):
+def test_calculate_deposit(summa, years, expected):
     assert int(calculate_deposit(summa, years)) == expected

@@ -10,5 +10,5 @@ from tasks.variables.n_nn_nnn import n_sum
         (5, 155),
     ]
 )
-def test_cockroach_speed(n, expected):
+def test_n_sum(n, expected):
     assert n_sum(n) == expected

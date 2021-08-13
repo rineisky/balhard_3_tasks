@@ -12,5 +12,5 @@ from tasks.variables.str_sum import str_sum
         ('-6', '-12', -18),
     ]
 )
-def test_square(str1, str2, expected):
+def test_str_sum(str1, str2, expected):
     assert str_sum(str1, str2) == expected
