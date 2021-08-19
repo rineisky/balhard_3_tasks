@@ -29,4 +29,3 @@ def cockroach_speed(kmh_speed: float) -> int:
 if __name__ == '__main__':
     speed_val = float(input('Введите скорость таракана в км/ч: '))
     print(f'Скорость таракана в см/с: {cockroach_speed(speed_val)}')
-

@@ -49,4 +49,3 @@ if __name__ == '__main__':
     years_val = int(input('Введите количество лет: '))
     print(f"После {years_val} лет сумма на депозите будет равна: "
           f"{calculate_deposit(sum_val, years_val)}")
-

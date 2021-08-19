@@ -30,4 +30,3 @@ if __name__ == '__main__':
     bill_val = input('Введите сумму из чека: ')
     result = tip(bill_val)
     print(f'Чаевые, cashback: {result[0]:.2f}, {result[1]:.2f}')
-
