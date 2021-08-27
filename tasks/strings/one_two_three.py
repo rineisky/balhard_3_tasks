@@ -24,8 +24,9 @@ def process_numbers(numbers: str) -> str:
 
     :return: обработанная строка
     """
-    result = None
+    result = string.replace("1", "uno").replace("2", "two").replace("3", "")
     return result
+
 
 
 if __name__ == '__main__':
