@@ -19,13 +19,16 @@ def square(side: str) -> tuple:
 
     :param side: сторона квадрата
     :type side: str
+    float(sqrt(2) * side_val)
+    float(side_val *
 
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-    perimeter = None
-    s_square = None
-    diagonal = None
+    from math import sqrt
+    perimeter = int(side) * 4
+    s_square = int(side) * int(side)
+    diagonal = sqrt(2) * int(side)
     return perimeter, s_square, diagonal
 
 
