@@ -33,7 +33,10 @@ def print_recipe() -> str:
     :return: отформатированная строка
     :rtype: str
     """
-    result = None
+    TITLE = 'Рецепт ОМЛЕТ:\n'
+    RECIPE = 'Яйцо куриное - 5 шт,\rМолоко - 100 мл,\nМука пшеничная - 0,5 ст.л.,\nСоль - 0,5 ч.л.,\n' \
+             'Масло растительное - 2 ст.л.\n'
+    result = print(TITLE, RECIPE)
     return result
 
 

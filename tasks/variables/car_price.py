@@ -29,7 +29,7 @@ def car_price(price: float) -> float:
 
     :return: Стоимость автомобиля с наценками
     """
-    result = None
+    result = round((price * 118 / 100) + (price * 5 / 100) + 500 + 100, 2)
     return result
 
 
