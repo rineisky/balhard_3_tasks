@@ -26,9 +26,9 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
     from math import sqrt
-    perimeter = int(side) * 4
-    s_square = int(side) * int(side)
-    diagonal = sqrt(2) * int(side)
+    perimeter = float(side) * 4
+    s_square = float(side) * float(side)
+    diagonal = sqrt(2) * float(side)
     return perimeter, s_square, diagonal
 
 
