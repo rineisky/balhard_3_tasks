@@ -11,14 +11,14 @@ import sys
 from typing import Any
 
 
-def size_in_kb(some_object: Any) -> str:
+def size_in_kb(some_object: Any) -> float:
     """Вычисляет размер объекта в кб, округленного до 2 знаков после запятой,
     и возвращает строку
 
     :param some_object: любой объект
     :return: строка вида "1.23 кб"
     """
-    result = round((sys.getsizeof(True) / 1024), 2)
+    result = float(round((sys.getsizeof(True) / 1024), 2))
     return result
 
 
