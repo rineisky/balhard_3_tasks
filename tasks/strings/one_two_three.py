@@ -28,7 +28,6 @@ def process_numbers(numbers: str) -> str:
     return result
 
 
-
 if __name__ == '__main__':
     string = input('Введите строку: ')
     print(f"Результат: {process_numbers(string)}")
