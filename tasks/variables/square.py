@@ -15,7 +15,6 @@
 import math
 
 
-
 def square(side: str) -> tuple:
     """Вычисляет периметр, площадь, диагональ квадрата по стороне
 
@@ -25,8 +24,8 @@ def square(side: str) -> tuple:
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-    perimeter = float(side) *4
-    s_square = float(side) **2
+    perimeter = float(side) * 4
+    s_square = float(side) ** 2
     diagonal = float(math.sqrt(s_square * 2))
     return perimeter, s_square, diagonal
 
