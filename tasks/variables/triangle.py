@@ -12,10 +12,8 @@ triangle(3, 4) -> (5, 12, 6)
 import math
 
 
-
 def triangle(side_1: int, side_2: int) -> tuple:
-    """
-    Рассчитывает гипотенузу, периметр и площадь
+    """Рассчитывает гипотенузу, периметр и площадь
 
     :param side_1: первый катет
     :type side_1: int
