@@ -18,7 +18,6 @@
 import math
 
 
-
 def split_to_parts(str_to_split: str) -> tuple:
     """Разделяет строку на 2 части. Если длина строки нечетная, то первая часть
     на один символ больше
@@ -29,7 +28,6 @@ def split_to_parts(str_to_split: str) -> tuple:
     """
     length = len(str_to_split)
     half = math.ceil(length / 2)
-
 
     part_1 = str_to_split[:half]
     part_2 = str_to_split[half:]
