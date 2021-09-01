@@ -11,6 +11,7 @@ triangle(3, 4) -> (5, 12, 6)
 """
 import math
 
+
 def triangle(side_1: int, side_2: int) -> tuple:
     """
     Рассчитывает гипотенузу, периметр и площадь
