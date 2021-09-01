@@ -25,8 +25,8 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :rtype: tuple
     """
     hypotenuse = int(math.sqrt(side_1**2 + side_2**2))
-    perimeter = side_1 + side_2 + hypotenuse
-    square = side_1 + side_2 / 2
+    perimeter = int(side_1 + side_2 + hypotenuse)
+    square = int((side_1 * side_2) * 0.5)
     return hypotenuse, perimeter, square
 
 
