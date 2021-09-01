@@ -39,7 +39,7 @@ def calculate_deposit(summa: float, years: int) -> float:
 
     :return: итоговая сумма на вкладе
     """
-    result = None
+    result = float(summa) * ((1 + 0.1)**years)
     return result
 
 

@@ -19,7 +19,7 @@ def n_sum(n: int) -> int:
 
     :return: результат выполнения
     """
-    result = None
+    result = n + (n * n) + (n * n * n)
     return result
 
 
