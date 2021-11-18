@@ -1,9 +1,6 @@
 def n_sum(n: int) -> int:
-    # Вычисляет формулу n+nn+nnn
     x = int(n + n * n + n * n * n)
-    # :param n: некоторое целое число
     # z = int(x)
-    # :return: результат выполнения
     result = x
     return result
 
