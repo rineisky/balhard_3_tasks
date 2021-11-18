@@ -25,7 +25,7 @@ DELIVERY_PRICE = 100
 def car_price(price: float) -> float:
     pros = price * 0.23
     pros2 = 600
-    result = float(price)+float(pros)+float(pros2)
+    result = float(price) + float(pros) + float(pros2)
     return result
 
 

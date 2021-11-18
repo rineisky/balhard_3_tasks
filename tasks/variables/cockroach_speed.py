@@ -14,6 +14,7 @@ cockroach_speed(2.13) -> 59
 
 import math
 
+
 def cockroach_speed(kmh_speed: float) -> int:
     """Переводит скорость таракана из км/ч в см/с
 
@@ -21,8 +22,8 @@ def cockroach_speed(kmh_speed: float) -> int:
 
     :return: скорость в см/с
     """
-    result = (kmh_speed*1000/36)
-    x=math.floor(result)
+    result = (kmh_speed * 1000 / 36)
+    x = math.floor(result)
     return x
 
 

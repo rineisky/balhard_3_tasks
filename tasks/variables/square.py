@@ -23,10 +23,10 @@ def square(side: str) -> tuple:
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-    perimeter = (float(side)*4)
+    perimeter = (float(side) * 4)
     print(perimeter)
-    s_square = float(side)**2
-    diagonal = ((2*float(side)**2)**.5)
+    s_square = float(side) ** 2
+    diagonal = ((2 * float(side) ** 2) ** .5)
     return int(perimeter), int(s_square), int(diagonal)
 
 
