@@ -6,28 +6,16 @@
 чтобы она возвращала периметр, площадь и гипотенузу
 
 ПРИМЕРЫ
---------------------------------------------------------------------------------
+--------------------------------------------------------------------------------c
 triangle(3, 4) -> (5, 12, 6)
 """
-
+import math
 
 def triangle(side_1: int, side_2: int) -> tuple:
-    """
-    Рассчитывает гипотенузу, периметр и площадь
-
-    :param side_1: первый катет
-    :type side_1: int
-
-    :param side_2: второй катет
-    :type side_2: int
-
-    :return: кортеж с параметрами
-    :rtype: tuple
-    """
-    hypotenuse = None
-    perimeter = None
-    square = None
-    return hypotenuse, perimeter, square
+    hypotenuse = (side1_val ** 2 + side2_val ** 2) ** .5
+    perimeter = (side1_val + side2_val + math.sqrt(side1_val * side1_val + side2_val * side2_val))
+    square = (side1_val * side2_val / 2)
+    return int(hypotenuse), int(perimeter), int(square)
 
 
 if __name__ == '__main__':

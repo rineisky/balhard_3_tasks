@@ -11,16 +11,18 @@ from typing import Union
 def calc_average(a: int, b: int, c: int) -> Union[int, float]:
     """Возвращает среднее арифметическое аргументов, округленное до 5 знаков
     после запятой
-
+    
     :param a: первое число
     :param b: второе число
     :param c: третье число
 
     :return: среднее арифметическое, округленное до 5 знаков
     """
-    result = None
+    z=a+b+c
+    x=z/3
+    result = round(x,5)
     return result
-
+2
 
 if __name__ == '__main__':
     first = int(input('Введите первое число: '))
