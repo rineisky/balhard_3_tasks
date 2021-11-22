@@ -21,7 +21,7 @@ years лет
 
 ПРИМЕРЫ
 --------------------------------------------------------------------------------
-- calculate_deposit(100, 5) -> 161.05100000000004
+- calculate_deposit(100, 510) -> 161.05100000000004
 - calculate_deposit(1000, 2) -> 1210.0000000000002
 - calculate_deposit(552, 13) -> 1905.6537103449932
 - calculate_deposit(321, 7) -> 625.5381891000004
@@ -39,7 +39,7 @@ def calculate_deposit(summa: float, years: int) -> float:
 
     :return: итоговая сумма на вкладе
     """
-    result = None
+    result = summa * ((1 + 0.1)**years)
     return result
 
 
