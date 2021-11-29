@@ -25,7 +25,9 @@ def str_sum(str1: str, str2: str) -> int:
     :return: сумму чисел из строк
     :rtype: int
     """
-    result = None
+    str1 = int(str1)
+    str2 = int(str2)
+    result = str1 + str2
     return result
 
 
