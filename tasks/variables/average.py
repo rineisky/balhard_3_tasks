@@ -5,6 +5,8 @@
 которая возвращает среднее арифметическое аргументов
 и округляет его до 5 знаков после запятой.
 """
+
+from decimal import Decimal
 from typing import Union
 
 
@@ -18,7 +20,8 @@ def calc_average(a: int, b: int, c: int) -> Union[int, float]:
 
     :return: среднее арифметическое, округленное до 5 знаков
     """
-    result = None
+    d = float((a + b + c) / 3)
+    result = float(Decimal(d).quantize(Decimal("1.11111")))
     return result
 
 

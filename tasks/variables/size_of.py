@@ -7,6 +7,8 @@ getsizeof() возвращает результат в байтах. В одно
 
 Полученный результат округлите до 2 знаков после запятой
 """
+
+from decimal import Decimal
 from sys import getsizeof
 from typing import Any
 
@@ -18,7 +20,7 @@ def size_in_kb(some_object: Any) -> str:
     :param some_object: любой объект
     :return: стока вида "1.23 кб"
     """
-    result = None
+    result = str(Decimal(getsizeof(some_object) / 1024).quantize(Decimal("1,11"))) + " кб"
     return result
 
 
