@@ -15,7 +15,7 @@
 - 'hello' -> ('hel', 'lo')
 - 'some' -> ('so', 'me')
 """
-
+import math
 
 def split_to_parts(str_to_split: str) -> tuple:
     """Разделяет строку на 2 части. Если длина строки нечетная, то первая часть
@@ -25,8 +25,9 @@ def split_to_parts(str_to_split: str) -> tuple:
 
     :return: кортеж с двумя частями
     """
-    part_1 = None
-    part_2 = None
+    mid_index = math.ceil(len(str_to_split) / 2)
+    part_1 = str_to_split[:mid_index]
+    part_2 = str_to_split[mid_index:]
     return part_1, part_2
 
 

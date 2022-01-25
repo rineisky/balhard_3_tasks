@@ -14,14 +14,16 @@ cockroach_speed(2.13) -> 59
 
 
 def cockroach_speed(kmh_speed: float) -> int:
+    import math
     """Переводит скорость таракана из км/ч в см/с
 
     :param kmh_speed: скорость в км/ч
 
     :return: скорость в см/с
     """
-    result = None
+    result = math.floor(kmh_speed * 1000 / 36)
     return result
+
 
 
 if __name__ == '__main__':

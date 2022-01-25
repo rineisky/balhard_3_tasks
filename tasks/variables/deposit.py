@@ -27,8 +27,10 @@ years лет
 - calculate_deposit(321, 7) -> 625.5381891000004
 """
 # Процентная ставка
-DEPOSIT_RATE = 10
+import math
 
+DEPOSIT_RATE = 10
+import math
 
 def calculate_deposit(summa: float, years: int) -> float:
     """Рассчитывает итоговую сумму по вкладу
@@ -39,7 +41,7 @@ def calculate_deposit(summa: float, years: int) -> float:
 
     :return: итоговая сумма на вкладе
     """
-    result = None
+    result = summa * ((1 + 0.1)**years)
     return result
 
 
