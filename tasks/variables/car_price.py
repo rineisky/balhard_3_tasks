@@ -20,6 +20,7 @@ TAX = 18
 REGISTRATION_FEE = 5
 AGENCY_FEE = 500
 DELIVERY_PRICE = 100
+summ_procents = TAX + REGISTRATION_FEE
 
 
 def car_price(price: float) -> float:
@@ -29,7 +30,7 @@ def car_price(price: float) -> float:
 
     :return: Стоимость автомобиля с наценками
     """
-    result = None
+    result = price + (price / 100 * summ_procents) + AGENCY_FEE + DELIVERY_PRICE
     return result
 
 
